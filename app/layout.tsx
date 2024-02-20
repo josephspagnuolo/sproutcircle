@@ -16,10 +16,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="h-full bg-white text-gray-900 sr">
+      <body className={`${inter.className} h-full flex flex-col`}>
         <NavBar />
-        {children}
+        <main className="pt-20 p-4 grow">
+          {children}
+        </main>
+        <footer className="bottom-2.5 flex justify-center items-center text-xs py-4">
+          <p>&copy; 2024 SproutCircle - All rights reserved.</p>
+        </footer>
       </body>
     </html >
   );
