@@ -145,7 +145,7 @@ export default function Home() {
         <div className="flex justify-center">
           <span className="flex text-gray-500 text-md text-center max-w-4xl">
             Welcome to “Meteor Mayhem” by Sprout Circle! Prepare yourself for an exhilarating adventure in the depths of space, where your survival instincts will be put to the ultimate test. In this infinite runner game, you take on the role of a courageous space pilot whose ship has become lost in the vastness of the cosmos.
-            As an iOS and Android game, “Meteor Mayhem” is optimized for mobile play, allowing you to enjoy the adrenaline-pumping action anytime, anywhere. Whether you&aapos;re waiting in line or simply want to immerse yourself in an exciting gaming experience, Sprout Circle&apos;s “Meteor Mayhem” guarantees to keep you entertained and challenged.
+            As an iOS and Android game, “Meteor Mayhem” is optimized for mobile play, allowing you to enjoy the adrenaline-pumping action anytime, anywhere. Whether you&apos;re waiting in line or simply want to immerse yourself in an exciting gaming experience, Sprout Circle&apos;s “Meteor Mayhem” guarantees to keep you entertained and challenged.
             So, pilot, prepare yourself for an epic adventure, test your survival skills, and embark on a thrilling journey through the unknown. Will you conquer the depths of space and emerge victorious in “Meteor Mayhem”? The universe awaits your valiant efforts!
           </span>
         </div>
