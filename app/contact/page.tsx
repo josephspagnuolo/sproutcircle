@@ -99,6 +99,9 @@ export default function Contact() {
             <p>Submit</p>
           </button>
         </form>
+        <div className="flex justify-center w-full pt-6">
+          <a href="mailto:sproutcirclegames@gmail.com">sproutcirclegames@gmail.com</a>
+        </div>
       </div>
     </div>
   );
