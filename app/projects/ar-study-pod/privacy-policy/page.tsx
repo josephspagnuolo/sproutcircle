@@ -13,14 +13,14 @@ export default function ARStudyPodPrivacyPolicy() {
           We want to make it clear that we do not collect any data from users of AR Study Pod. We believe in upholding the highest standards of privacy and transparency. As such, you can rest assured that your privacy is fully respected when you use our app. This means that we do not gather, store, or process any personal information, including but not limited to:
         </div>
         <div className="py-2">
-          <ul>
-            <li>- Names</li>
-            <li>- Email addresses</li>
-            <li>- User accounts</li>
-            <li>- Device Information</li>
-            <li>- Location Data</li>
-            <li>- Usage Statistics</li>
-            <li>- Any other identifiable information</li>
+          <ul className="list-disc">
+            <li>Names</li>
+            <li>Email addresses</li>
+            <li>User accounts</li>
+            <li>Device Information</li>
+            <li>Location Data</li>
+            <li>Usage Statistics</li>
+            <li>Any other identifiable information</li>
           </ul>
         </div>
         <div className="py-2 ml-8">Information Automatically Collected</div>
