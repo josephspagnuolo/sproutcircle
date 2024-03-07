@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,7 @@ export default function RootLayout({
         <main className="pt-20 p-4 grow">
           {children}
         </main>
-        <footer className="bottom-2.5 flex justify-center items-center text-xs py-4">
-          <p>&copy; 2024 SproutCircle - All rights reserved.</p>
-        </footer>
+        <Footer />
       </body>
     </html >
   );
