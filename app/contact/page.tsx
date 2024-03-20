@@ -1,14 +1,12 @@
-"use client";
+import ContactForm from '@/components/contact-form';
+import type { Metadata } from 'next'
 
-import { useState } from "react";
-//import toast from "react-hot-toast";
-import { useRouter } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
+export const metadata: Metadata = {
+  title: 'Contact Us - Sprout Circle',
+  description: "If you have any questions, comments, or inquiries, we'd love to hear from you.You can reach out to us via email, or by filling out the contact form below. Our team is here to assist you during business hours, and we strive to respond to all inquiries promptly. Thank you for considering contacting us. We look forward to connecting with you!",
+}
 
 export default function Contact() {
-  const [loading, setLoading] = useState(false);
-  const router = useRouter();
   return (
     <div className="flex grow items-center justify-center">
       <div className="w-full max-w-2xl overflow-hidden">
@@ -17,88 +15,7 @@ export default function Contact() {
             <h3 className="text-xl font-semibold">Contact Us</h3>
           </div>
         </div>
-        <form className="flex flex-col space-y-3 px-4 py-5 sm:px-16"
-          onSubmit={(e) => {
-            e.preventDefault();
-            setLoading(true);
-            fetch("/api/contact", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify({
-                name: e.currentTarget.nametxt.value,
-                email: e.currentTarget.email.value,
-                message: e.currentTarget.message.value,
-              }),
-            }).then(async (res) => {
-              if (res.status === 200) {
-                //toast.success("If an account exists with that email, you will receive a password reset link.", { duration: 10000 });
-                router.push("/");
-              } else {
-                const { error } = await res.json();
-                //.error(error);
-              }
-            });
-          }}>
-          <div>
-            <label
-              htmlFor="nametxt"
-              className="block text-xs text-gray-400"
-            >
-              {"Name *"}
-            </label>
-            <input
-              id="nametxt"
-              name="nametxt"
-              type="text"
-              required
-              className="mt-1 block w-full rounded-md border border-gray-600 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-gray-400 focus:outline-none focus:ring-black sm:text-sm"
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="email"
-              className="block text-xs text-gray-400"
-            >
-              {"Email Address *"}
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              autoComplete="email"
-              required
-              className="mt-1 block w-full rounded-md border border-gray-600 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-gray-400 focus:outline-none focus:ring-black sm:text-sm"
-            />
-          </div>
-          <div>
-            <label
-              htmlFor="message"
-              className="block text-xs text-gray-400"
-            >
-              {"Message *"}
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              rows={8}
-              cols={15}
-              required
-              className="mt-1 block w-full rounded-md border border-gray-600 px-3 py-2 shadow-sm focus:border-gray-400 focus:outline-none focus:ring-black sm:text-sm h-32 resize-none"
-            />
-          </div>
-          <button
-            type="submit"
-            disabled={loading}
-            className={`${loading
-              ? "cursor-not-allowed border-[#292929] bg-[#292929]"
-              : "bg-[#556b2f] text-white hover:bg-[#56ab2f]"
-              } flex h-10 w-full items-center justify-center rounded-md border text-sm transition-all focus:outline-none`}
-          >
-            <p>Submit</p>
-          </button>
-        </form>
+        <ContactForm />
         <div className="flex justify-center w-full pt-6">
           <a href="mailto:sproutcirclegames@gmail.com">sproutcirclegames@gmail.com</a>
         </div>
