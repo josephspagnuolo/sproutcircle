@@ -9,7 +9,7 @@ export default function NavBar() {
   return (
     <nav className="fixed z-10 w-full backdrop-blur-lg bg-white bg-opacity-50 transition-all ease-in-out duration-500">
       <div className={`flex items-center justify-between h-16 px-4 sm:px-6 lg:px-8 ${isOpen ? 'md:flex' : ''}`}>
-        <Link href="/" onClick={() => setIsOpen(!isOpen)} className="flex flex-row items-center">
+        <Link href="/" onClick={() => setIsOpen(false)} className="flex flex-row items-center">
           <Image src="/LogoNoBG.png" alt="Logo" height={40} width={40} /><span>Sprout Circle</span>
         </Link>
         <div className="hidden md:block">
@@ -35,11 +35,11 @@ export default function NavBar() {
 
       <div className={`overflow-hidden inset-x-0 transition-all ease-in-out duration-500 ${isOpen ? 'opacity-100 h-[184px]' : 'opacity-0 h-0'} origin-top-right md:hidden`}>
         <div className="px-5 pb-3 space-y-1">
-          <a href="/#about" onClick={() => setIsOpen(!isOpen)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
-          <a href="/#services" onClick={() => setIsOpen(!isOpen)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
-          <a href="/#team" onClick={() => setIsOpen(!isOpen)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Team</a>
-          <a href="/#projects" onClick={() => setIsOpen(!isOpen)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Projects</a>
-          <Link href="/contact" onClick={() => setIsOpen(!isOpen)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</Link>
+          <a href="/#about" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
+          <a href="/#services" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
+          <a href="/#team" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Team</a>
+          <a href="/#projects" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Projects</a>
+          <Link href="/contact" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</Link>
         </div>
       </div>
     </nav>
