@@ -79,6 +79,7 @@ export default function ContactForm() {
           id="nametxt"
           name="nametxt"
           type="text"
+          autoComplete="name"
           required
           className="mt-1 block w-full rounded-md border border-gray-600 px-3 py-2 placeholder-gray-400 shadow-sm focus:border-gray-400 focus:outline-none focus:ring-black sm:text-sm"
         />

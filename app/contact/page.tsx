@@ -2,7 +2,7 @@ import ContactForm from '@/components/contact-form';
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us - Sprout Circle',
+  title: 'Sprout Circle - Contact Us',
   description: "If you have any questions, comments, or inquiries, we'd love to hear from you.You can reach out to us via email, or by filling out the contact form below. Our team is here to assist you during business hours, and we strive to respond to all inquiries promptly. Thank you for considering contacting us. We look forward to connecting with you!",
 }
 
