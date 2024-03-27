@@ -41,25 +41,6 @@
   padding: 35px 35px;
 }
 
-.main {
-  background-color: #fff;
-  padding: 10rem 0;
-}
-
-.main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  height: 90%;
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  padding: 0 50px;
-
-}
-
 .main__btn {
   font-size: 1.8rem;
   background: #556b2f;
@@ -101,27 +82,6 @@
 
 .main__btn:hover:after {
   width: 100%;
-}
-
-.main__img__container {
-  text-align: center;
-}
-
-@media screen and (max-width: 1024px) {
-  .main__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
-    height: 90%;
-  }
-
-  .main__img__container {
-    display: flex;
-    justify-content: center;
-  }
 }
 
 @media screen and (max-width: 480px) {

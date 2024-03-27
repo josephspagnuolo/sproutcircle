@@ -3,9 +3,10 @@ import styles from './styles.module.css'
 import Reveal from "@/components/reveal";
 import Link from "next/link";
 import { Metadata } from "next";
+import CubeScene from "@/components/cubescene";
 
 export const metadata: Metadata = {
-  title: 'Sprout Circle - Immersive digital creations',
+  title: 'Sprout Circle',
   description: "Developing engaging experiences with innovative technologies that are shaping the future of the digital landscape. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.",
 }
 
@@ -24,20 +25,45 @@ export default function Home() {
           </div>
         </div>
       </Reveal>
-      <div className={styles.main} id="about">
-        <div className={styles.main__container}>
-          <div className={styles.main__img__container}>
-            <Image alt="logo" src="/LogoNoBG.png" height={500} width={500} />
+      <div className="flex justify-center py-44 md:px-10" id="about">
+        <div className="grid md:grid-cols-2 grid-cols-1 max-w-7xl justify-center items-center">
+          <div className="flex justify-center text-center h-[600px]">
+            <CubeScene />
           </div>
-          <div className="flex flex-col justify-center text-center lg:text-left">
+          <div className="flex flex-col justify-center text-center md:text-left md:pr-4">
             <span className="font-bold text-xl text-[#799e29] pb-6">What do we do</span>
             <span>At Sprout Circle, we are passionate about creating innovative and immersive digital experiences at the intersection of art and technology&mdash;seamlessly blending entertainment with areas like education and manufacturing processes. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.</span>
             <Link href="/contact" className={styles.main__btn}><span className="flex z-[2] w-full text-center justify-center relative">Get in Touch</span></Link>
           </div>
         </div>
       </div>
+      <div className="flex justify-center py-32 flex-col space-y-4" id="services">
+        <span className="font-bold text-xl text-center text-[#799e29]">
+          Services
+        </span>
+        <div className="flex justify-center">
+          <span className="flex text-gray-500 text-md text-center pt-6 max-w-4xl">
+            Our goal is to bring your digital visions to life. At our core, we specialize in a multitude of offerings tailored to meet your needs. From crafting immersive digital experiences that push the boundaries of innovation to developing captivating mobile games and applications, we&apos;re dedicated to delivering solutions that captivate and inspire. Our expertise extends to mixed reality technologies, where we pioneer interactive AR and VR experiences that redefine learning and engagement. With a focus on creativity, collaboration, and cutting-edge technology, we&apos;re here to turn your ideas into exceptional digital realities.
+          </span>
+        </div>
+        <div className="flex justify-center pt-10">
+          <svg className="animate-bounce" width="64px" height="64px" viewBox="0 0 32.00 32.00" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" stroke="#ffffff" style={{ filter: 'drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))' }}>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0">
+              <rect x="0" y="0" width="32.00" height="32.00" rx="16" fill="#799e29" strokeWidth="0"></rect>
+            </g>
+            <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+                <g id="Icon-Set-Filled" transform="translate(-414.000000, -1089.000000)" fill="#ffffff">
+                  <path d="M436.535,1105.88 L430.879,1111.54 C430.639,1111.78 430.311,1111.85 430,1111.79 C429.689,1111.85 429.361,1111.78 429.121,1111.54 L423.465,1105.88 C423.074,1105.49 423.074,1104.86 423.465,1104.46 C423.855,1104.07 424.488,1104.07 424.879,1104.46 L429,1108.59 L429,1098 C429,1097.45 429.448,1097 430,1097 C430.553,1097 431,1097.45 431,1098 L431,1108.59 L435.121,1104.46 C435.512,1104.07 436.146,1104.07 436.535,1104.46 C436.926,1104.86 436.926,1105.49 436.535,1105.88 L436.535,1105.88 Z M430,1089 C421.163,1089 414,1096.16 414,1105 C414,1113.84 421.163,1121 430,1121 C438.837,1121 446,1113.84 446,1105 C446,1096.16 438.837,1089 430,1089 L430,1089 Z" id="arrow-down-circle"> </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+        </div>
+      </div>
       <Reveal origin="left" duration={1000} distance="250px" delay={450} >
-        <div className="flex justify-center py-32 flex-col space-y-4">
+        <div className="flex justify-center pb-16 flex-col space-y-4">
           <span className="font-bold text-xl text-center text-[#799e29]">
             Mixed Reality
           </span>
@@ -52,7 +78,7 @@ export default function Home() {
         </div>
       </Reveal>
       <Reveal origin="left" duration={1000} distance="250px" delay={450}>
-        <div className="flex justify-center py-32 flex-col space-y-4">
+        <div className="flex justify-center py-16 flex-col space-y-4">
           <span className="font-bold text-xl text-center text-[#799e29]">
             Mobile Games
           </span>
@@ -67,7 +93,7 @@ export default function Home() {
         </div>
       </Reveal>
       <Reveal origin="left" duration={1000} distance="250px" delay={450}>
-        <div className="flex justify-center py-32 flex-col space-y-4">
+        <div className="flex justify-center pt-16 pb-32 flex-col space-y-4">
           <span className="font-bold text-xl text-center text-[#799e29]">
             App & Web Development
           </span>
