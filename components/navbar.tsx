@@ -33,7 +33,7 @@ export default function NavBar() {
         </div>
       </div>
 
-      <div className={`overflow-hidden inset-x-0 transition-all ease-in-out duration-500 ${isOpen ? 'opacity-100 h-[184px]' : 'opacity-0 h-0'} origin-top-right md:hidden`}>
+      <div className={`overflow-hidden inset-x-0 transition-all ease-in-out duration-500 ${isOpen ? 'opacity-100 h-[228px]' : 'opacity-0 h-0'} origin-top-right md:hidden`}>
         <div className="px-5 pb-3 space-y-1">
           <a href="/#about" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
           <a href="/#services" onClick={() => setIsOpen(false)} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
