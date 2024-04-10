@@ -4,6 +4,7 @@ import Reveal from "@/components/reveal";
 import Link from "next/link";
 import { Metadata } from "next";
 import CubeScene from "@/components/cubescene";
+import ingenuity from "@/public/ingenuity.png"
 
 export const metadata: Metadata = {
   title: 'Sprout Circle',
@@ -15,7 +16,7 @@ export default function Home() {
     <>
       <Reveal origin="left" duration={750} distance="250px" >
         <div className="flex justify-center pt-32 flex-col space-y-4">
-          <span className="font-bold text-6xl text-center">
+          <span className="font-bold text-5xl sm:text-6xl text-center">
             Immersive digital creations
           </span>
           <div className="flex justify-center">
@@ -27,14 +28,22 @@ export default function Home() {
       </Reveal>
       <div className="flex justify-center py-44 md:px-10" id="about">
         <div className="grid md:grid-cols-2 grid-cols-1 max-w-7xl justify-center items-center">
-          <div className="flex justify-center text-center h-[600px]">
+          <div className="flex justify-center text-center h-[600px] -mx-4">
             <CubeScene />
           </div>
-          <div className="flex flex-col justify-center text-center md:text-left md:pr-4">
+          <div className="flex flex-col justify-center text-center md:text-left md:px-4 lg:pr-16">
             <span className="font-bold text-xl text-[#799e29] pb-6">What do we do</span>
             <span>At Sprout Circle, we are passionate about creating innovative and immersive digital experiences at the intersection of art and technology&mdash;seamlessly blending entertainment with areas like education and manufacturing processes. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.</span>
             <Link href="/contact" className={styles.main__btn}><span className="flex z-[2] w-full text-center justify-center relative">Get in Touch</span></Link>
           </div>
+        </div>
+      </div>
+      <div className="flex justify-center flex-col md:flex-row bg-gray-200 -mx-4 -mt-5 mb-6 p-10 py-16 items-center md:space-x-14 space-y-10 md:space-y-0">
+        <Image src={ingenuity} alt="Lakehead Ingenuity Program Logo" width={400} />
+        <div className="flex flex-col w-min text-center md:text-right">
+          <span className="text-2xl sm:text-3xl pb-1.5">Trusted By</span>
+          <span className="text-3xl sm:text-4xl font-semibold whitespace-nowrap md:whitespace-pre-wrap lg:whitespace-nowrap">Lakehead University&apos;s</span>
+          <span className="text-3xl sm:text-4xl font-semibold">Ingenuity</span>
         </div>
       </div>
       <div className="flex justify-center py-32 flex-col space-y-4" id="services">
