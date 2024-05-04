@@ -203,6 +203,33 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center flex-col text-center py-32 -mx-4">
+        <span className="font-bold text-xl text-[#799e29] pb-14">Featured in</span>
+        <div className="flex items-center overflow-hidden py-1">
+          <div className="relative top-0 left-0 min-w-[15%] h-44 bg-gradient-to-r from-white to-transparent z-20"></div>
+          <div className="w-[70%]">
+            <div className="animate-infinite-scroll flex gap-20">
+              <img alt="" src="https://pbs.twimg.com/profile_images/1445023335381876736/FNi-7jnB_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1176155649547350017/PgDayX_-_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/939185905004433408/f7EmHkrL_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/542732616508522497/DOkfPHii_400x400.png" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1258060545325797376/W-D2rLYV_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1341910299/PH_web_ad_400x400.PNG" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/971845146307264512/5OXofbkB_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/637347676267409409/pT_AY2d1_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1445023335381876736/FNi-7jnB_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1176155649547350017/PgDayX_-_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/939185905004433408/f7EmHkrL_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/542732616508522497/DOkfPHii_400x400.png" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1258060545325797376/W-D2rLYV_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1341910299/PH_web_ad_400x400.PNG" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/971845146307264512/5OXofbkB_400x400.jpg" className="w-40 h-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/637347676267409409/pT_AY2d1_400x400.jpg" className="w-40 h-40" />
+            </div>
+          </div>
+          <div className="relative top-0 -right-1 min-w-[16%] h-44 bg-gradient-to-l from-white via-[#ffffffa7] to-transparent z-20"></div>
+        </div>
+      </div>
     </>
   );
 }
