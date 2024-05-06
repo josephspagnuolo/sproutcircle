@@ -24,7 +24,7 @@ const config: Config = {
         },
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 30s linear infinite',
+        'infinite-scroll': 'infinite-scroll 40s linear infinite',
       },
     },
   },

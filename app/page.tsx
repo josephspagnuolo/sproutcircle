@@ -46,6 +46,33 @@ export default function Home() {
           <span className="text-3xl sm:text-4xl font-semibold">Ingenuity</span>
         </div>
       </div>
+      <div className="flex justify-center flex-col text-center bg-gray-200 py-6 pb-20 -mx-4 -mt-6">
+        <span className="font-bold text-xl text-[#799e29] pb-8">Featured in</span>
+        <div className="flex items-center overflow-hidden py-1">
+          <div className="relative top-0 left-0 min-w-[15%] h-44 bg-gradient-to-r from-gray-200 to-transparent z-[2]"></div>
+          <div className="w-[70%]">
+            <div className="animate-infinite-scroll flex gap-20">
+              <img alt="" src="https://pbs.twimg.com/profile_images/1445023335381876736/FNi-7jnB_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1176155649547350017/PgDayX_-_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/939185905004433408/f7EmHkrL_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/542732616508522497/DOkfPHii_400x400.png" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1258060545325797376/W-D2rLYV_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1341910299/PH_web_ad_400x400.PNG" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/971845146307264512/5OXofbkB_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/637347676267409409/pT_AY2d1_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1445023335381876736/FNi-7jnB_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1176155649547350017/PgDayX_-_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/939185905004433408/f7EmHkrL_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/542732616508522497/DOkfPHii_400x400.png" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1258060545325797376/W-D2rLYV_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/1341910299/PH_web_ad_400x400.PNG" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/971845146307264512/5OXofbkB_400x400.jpg" className="size-40" />
+              <img alt="" src="https://pbs.twimg.com/profile_images/637347676267409409/pT_AY2d1_400x400.jpg" className="size-40" />
+            </div>
+          </div>
+          <div className="relative top-0 -right-0 min-w-[15%] h-44 bg-gradient-to-l from-gray-200 to-transparent z-[2]"></div>
+        </div>
+      </div>
       <div className="flex justify-center py-32 flex-col space-y-4" id="services">
         <span className="font-bold text-xl text-center text-[#799e29]">
           Services
@@ -181,7 +208,9 @@ export default function Home() {
         <span className="font-bold text-xl text-center text-[#799e29]">Our Projects</span>
         <div className="flex justify-center items-center flex-col space-y-4 md:space-y-0 md:space-x-7 md:flex-row pt-10 max-w-4xl">
           <Image src="/mmlogo.jpg" alt="Meteor Mayhem" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
-          <Image src="/mm.gif" alt="Meteor Mayhem" height={360} width={210} />
+          <div className="bg-black rounded-3xl py-6">
+            <Image src="/mm.gif" alt="Meteor Mayhem" height={360} width={210} className="" />
+          </div>
         </div>
         <div className="flex flex-col justify-center pt-2.5">
           <span className="flex text-gray-500 text-md text-center max-w-4xl">
@@ -201,33 +230,6 @@ export default function Home() {
               <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" className="h-[80px] min-w-[206.72] rounded-xl" />
             </a>
           </div>
-        </div>
-      </div>
-      <div className="flex justify-center flex-col text-center py-32 -mx-4">
-        <span className="font-bold text-xl text-[#799e29] pb-14">Featured in</span>
-        <div className="flex items-center overflow-hidden py-1">
-          <div className="relative top-0 left-0 min-w-[15%] h-44 bg-gradient-to-r from-white to-transparent z-20"></div>
-          <div className="w-[70%]">
-            <div className="animate-infinite-scroll flex gap-20">
-              <img alt="" src="https://pbs.twimg.com/profile_images/1445023335381876736/FNi-7jnB_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/1176155649547350017/PgDayX_-_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/939185905004433408/f7EmHkrL_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/542732616508522497/DOkfPHii_400x400.png" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/1258060545325797376/W-D2rLYV_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/1341910299/PH_web_ad_400x400.PNG" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/971845146307264512/5OXofbkB_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/637347676267409409/pT_AY2d1_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/1445023335381876736/FNi-7jnB_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/1176155649547350017/PgDayX_-_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/939185905004433408/f7EmHkrL_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/542732616508522497/DOkfPHii_400x400.png" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/1258060545325797376/W-D2rLYV_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/1341910299/PH_web_ad_400x400.PNG" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/971845146307264512/5OXofbkB_400x400.jpg" className="w-40 h-40" />
-              <img alt="" src="https://pbs.twimg.com/profile_images/637347676267409409/pT_AY2d1_400x400.jpg" className="w-40 h-40" />
-            </div>
-          </div>
-          <div className="relative top-0 -right-1 min-w-[16%] h-44 bg-gradient-to-l from-white via-[#ffffffa7] to-transparent z-20"></div>
         </div>
       </div>
     </>
