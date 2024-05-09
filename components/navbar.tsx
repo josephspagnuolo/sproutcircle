@@ -18,7 +18,7 @@ export default function NavBar() {
             <a href="/#services" className="hover:bg-gray-200 px-4 py-2 rounded-lg text-sm font-medium">Services</a>
             <a href="/#team" className="hover:bg-gray-200 px-4 py-2 rounded-md text-sm font-medium">Team</a>
             <a href="/#projects" className="hover:bg-gray-200 px-4 py-2 rounded-md text-sm font-medium">Projects</a>
-            <Link href="/contact" className="hover:bg-gray-200 px-4 py-2 rounded-md text-sm font-medium">Contact</Link>
+            <Link href="/contact" className="bg-[#799e29] hover:bg-[#556b2f] transition-colors px-4 py-2 rounded-md text-sm font-medium text-white">Contact</Link>
           </div>
         </div>
         <div className="-mr-2 flex md:hidden">

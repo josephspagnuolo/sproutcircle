@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <Reveal origin="left" duration={750} distance="250px" >
+      <Reveal origin="bottom" duration={1000} distance="25px" >
         <div className="flex justify-center pt-32 flex-col space-y-4">
           <span className="font-bold text-5xl sm:text-6xl text-center">
             Immersive digital creations
@@ -98,7 +98,7 @@ export default function Home() {
           </svg>
         </div>
       </div>
-      <Reveal origin="left" duration={1000} distance="250px" delay={450} >
+      <Reveal origin="bottom" duration={1000} distance="25px" delay={450} >
         <div className="flex justify-center pb-16 flex-col space-y-4">
           <span className="font-bold text-xl text-center text-[#799e29]">
             Mixed Reality
@@ -113,7 +113,7 @@ export default function Home() {
           </div>
         </div>
       </Reveal>
-      <Reveal origin="left" duration={1000} distance="250px" delay={450}>
+      <Reveal origin="bottom" duration={1000} distance="25px" delay={450}>
         <div className="flex justify-center py-16 flex-col space-y-4">
           <span className="font-bold text-xl text-center text-[#799e29]">
             Mobile Games
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
         </div>
       </Reveal>
-      <Reveal origin="left" duration={1000} distance="250px" delay={450}>
+      <Reveal origin="bottom" duration={1000} distance="25px" delay={450}>
         <div className="flex justify-center pt-16 pb-32 flex-col space-y-4">
           <span className="font-bold text-xl text-center text-[#799e29]">
             App & Web Development

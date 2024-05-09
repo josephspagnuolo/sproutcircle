@@ -21,7 +21,6 @@ export default function Reveal({
     distance={distance}
     delay={delay}
     viewFactor={0.2}
-    rotate={{ x: 12, y: 40, z: 0 }}
     className="load-hidden">
     {children}
   </RevealWrapper>;
