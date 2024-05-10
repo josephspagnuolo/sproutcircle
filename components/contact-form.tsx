@@ -121,7 +121,7 @@ export default function ContactForm() {
         disabled={loading}
         className={`${loading
           ? "cursor-not-allowed border-[#292929] bg-[#292929]"
-          : "bg-[#556b2f] hover:bg-[#56ab2f]"
+          : "bg-[#799e29] hover:bg-[#556b2f]"
           } flex h-10 w-full items-center justify-center rounded-md border text-white text-sm transition-all focus:outline-none`}
       >
         {loading ? (
