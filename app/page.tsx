@@ -37,25 +37,25 @@ export default function Home() {
           <div id="about" className="pt-32 -mt-32">
             <ListReveal className="flex flex-col justify-center text-center md:text-left md:px-4 lg:pr-16 space-y-6" origin="bottom" interval={150} delay={500} duration={1000} distance="25px">
               <span className="load-hidden font-bold text-xl text-[#799e29]">What do we do</span>
-              <span className="load-hidden pb-2.5">At Sprout Circle, we are passionate about creating innovative and immersive digital experiences at the intersection of art and technology&mdash;seamlessly blending entertainment with areas like education and manufacturing processes. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.</span>
+              <span className="load-hidden text-gray-500 pb-2.5">At Sprout Circle, we are passionate about creating innovative and immersive digital experiences at the intersection of art and technology&mdash;seamlessly blending entertainment with areas like education and manufacturing processes. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.</span>
               <Link href="/contact" className="load-hidden flex justify-center bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
             </ListReveal>
           </div>
         </div>
       </section>
-      <section className="bg-gray-200 -mx-4 mb-32 mt-16 md:mt-0">
+      <section className="bg-gray-200 -mx-4 mb-32 mt-16 md:mt-0 overflow-hidden">
         <div className="flex justify-center flex-col md:flex-row px-10 py-20 items-center md:space-x-14 space-y-4 md:space-y-0">
-          <Image src={ingenuity} alt="Lakehead Ingenuity Program Logo" width={400} />
+          <Image src={ingenuity} alt="Lakehead Ingenuity Program Logo" width={382.2} />
           <div className="flex flex-col w-min text-center md:text-right">
             <span className="text-2xl sm:text-3xl pb-1.5">Trusted By</span>
             <span className="text-3xl sm:text-4xl font-semibold whitespace-nowrap md:whitespace-pre-wrap lg:whitespace-nowrap">Lakehead University&apos;s</span>
             <span className="text-3xl sm:text-4xl font-semibold">Ingenuity</span>
           </div>
         </div>
-        <div className="flex justify-center flex-col text-center pb-20">
+        <div className="flex justify-center flex-col text-center pb-20 overflow-hidden">
           <span className="font-bold text-xl text-[#799e29] py-6">Featured in</span>
           <div className="flex items-center overflow-hidden py-1">
-            <div className="relative top-0 left-0 min-w-[15%] h-44 bg-gradient-to-r from-gray-200 to-transparent z-[2]"></div>
+            <div className="relative top-0 -left-px min-w-[15%] h-44 bg-gradient-to-r from-gray-200 to-transparent z-[2]"></div>
             <div className="w-[70%]">
               <div className="animate-infinite-scroll flex gap-20">
                 <img alt="" src="https://pbs.twimg.com/profile_images/1445023335381876736/FNi-7jnB_400x400.jpg" className="size-40" />
@@ -76,7 +76,7 @@ export default function Home() {
                 <img alt="" src="https://pbs.twimg.com/profile_images/637347676267409409/pT_AY2d1_400x400.jpg" className="size-40" />
               </div>
             </div>
-            <div className="relative top-0 -right-0 min-w-[15%] h-44 bg-gradient-to-l from-gray-200 to-transparent z-[2]"></div>
+            <div className="relative top-0 -right-px min-w-[15%] h-44 bg-gradient-to-l from-gray-200 to-transparent z-[2]"></div>
           </div>
         </div>
       </section>
@@ -87,7 +87,7 @@ export default function Home() {
               Services
             </span>
             <div className="flex justify-center">
-              <span className="flex text-gray-500 text-md text-center pt-6 max-w-4xl">
+              <span className="flex text-gray-500 text-center pt-6 max-w-4xl">
                 Our goal is to bring your digital visions to life. At our core, we specialize in a multitude of offerings tailored to meet your needs. From crafting immersive digital experiences that push the boundaries of innovation to developing captivating mobile games and applications, we&apos;re dedicated to delivering solutions that captivate and inspire. Our expertise extends to mixed reality technologies, where we pioneer interactive AR and VR experiences that redefine learning and engagement. With a focus on creativity, collaboration, and cutting-edge technology, we&apos;re here to turn your ideas into exceptional digital realities.
               </span>
             </div>
@@ -117,7 +117,7 @@ export default function Home() {
               Captivating users with AR and VR experiences
             </span>
             <div className="flex justify-center">
-              <span className="flex text-gray-500 text-md text-center pt-6 max-w-lg">
+              <span className="flex text-gray-500 text-center pt-6 max-w-lg">
                 We are pushing the boundaries of technology by developing cutting-edge augmented reality (AR) and virtual reality (VR) software. In the realm of education, we are pioneering interactive solutions that revolutionize learning, offering students and professionals alike an unparalleled opportunity to explore and comprehend complex concepts in an immersive 3D environment.
               </span>
             </div>
@@ -132,7 +132,7 @@ export default function Home() {
               Creating fun and engaging games for everyone
             </span>
             <div className="flex justify-center">
-              <span className="flex text-gray-500 text-md text-center pt-6 max-w-lg">
+              <span className="flex text-gray-500 text-center pt-6 max-w-lg">
                 We are passionate about making games that are not only entertaining, but also easy to play and understand. Our games are designed to challenge and excite players of all ages, and our dedication to creating free games means that everyone can join in the fun. Whether you&apos;re a casual gamer or a dedicated player, we have something for you. Our commitment to creating games that are both fun and accessible make us a company to watch in the world of mobile gaming.
               </span>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
               Experienced with some of the latest technology
             </span>
             <div className="flex justify-center">
-              <span className="flex text-gray-500 text-md text-center pt-6 max-w-lg">
+              <span className="flex text-gray-500 text-center pt-6 max-w-lg">
                 With our knowledge in software design, we excel at crafting digital solutions tailored to your needs, ensuring optimal performance and user satisfaction. Our team is adept at leveraging cutting-edge technologies to create seamless and innovative experiences. From responsive web interfaces to dynamic mobile apps, we ensure your digital presence stands out in today's competitive landscape.
               </span>
             </div>
