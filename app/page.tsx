@@ -35,7 +35,7 @@ export default function Home() {
             <CubeScene />
           </div>
           <div id="about" className="pt-32 -mt-32">
-            <ListReveal className="flex flex-col justify-center text-center md:text-left md:px-4 lg:pr-16 space-y-6" origin="bottom" interval={150} delay={500} duration={1000} distance="25px">
+            <ListReveal className="flex flex-col justify-center text-center md:text-left md:px-4 lg:pr-16 space-y-6" origin="bottom" interval={150} delay={300} duration={1000} distance="25px">
               <span className="load-hidden font-bold text-xl text-[#799e29]">What do we do</span>
               <span className="load-hidden text-gray-500 pb-2.5">At Sprout Circle, we are passionate about creating innovative and immersive digital experiences at the intersection of art and technology&mdash;seamlessly blending entertainment with areas like education and manufacturing processes. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.</span>
               <Link href="/contact" className="load-hidden flex justify-center bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
@@ -81,7 +81,7 @@ export default function Home() {
         </div>
       </section>
       <section id="services">
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={450} >
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300} >
           <div className="flex justify-center pt-32 flex-col space-y-4">
             <span className="font-bold text-xl text-center text-[#799e29]">
               Services
@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </div>
         </Reveal>
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={450} >
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300} >
           <div className="flex justify-center py-16 pt-32 flex-col space-y-4">
             <span className="font-bold text-xl text-center text-[#799e29]">
               Mixed Reality
@@ -123,7 +123,7 @@ export default function Home() {
             </div>
           </div>
         </Reveal>
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={450}>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
           <div className="flex justify-center py-16 flex-col space-y-4">
             <span className="font-bold text-xl text-center text-[#799e29]">
               Mobile Games
@@ -138,7 +138,7 @@ export default function Home() {
             </div>
           </div>
         </Reveal>
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={450}>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
           <div className="flex justify-center pt-16 pb-32 flex-col space-y-4">
             <span className="font-bold text-xl text-center text-[#799e29]">
               App & Web Development
@@ -155,8 +155,10 @@ export default function Home() {
         </Reveal>
       </section>
       <section id="team" className="flex justify-center flex-col space-y-6 py-32">
-        <span className="font-bold text-xl text-center text-[#799e29]">Our Team</span>
-        <div className="flex flex-col p-10 lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8">
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
+          <span className="flex justify-center font-bold text-xl text-center text-[#799e29]">Our Team</span>
+        </Reveal>
+        <ListReveal className="flex flex-col p-10 lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
           <a href="https://www.linkedin.com/in/bryan-wong-61490519b/" className="flex justify-center" target="_blank" rel="noopener noreferrer">
             <div className={styles.flip_card}>
               <div className={styles.flip_card_inner}>
@@ -213,35 +215,50 @@ export default function Home() {
               </div>
             </div>
           </a>
-        </div>
+        </ListReveal>
       </section>
       <section id="projects" className="flex justify-center items-center flex-col space-y-6 py-32">
-        <span className="font-bold text-xl text-center text-[#799e29]">Our Projects</span>
-        <div className="flex justify-center items-center flex-col space-y-4 md:space-y-0 md:space-x-7 md:flex-row pt-10 max-w-4xl">
-          <Image src="/mmlogo.jpg" alt="Meteor Mayhem" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
+          <span className="flex justify-center font-bold text-xl text-center text-[#799e29]">Our Projects</span>
+        </Reveal>
+        <ListReveal className="flex justify-center items-center flex-col space-y-4 md:space-y-0 md:space-x-7 md:flex-row pt-10 max-w-4xl" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
           <div className="bg-black rounded-3xl py-6">
             <Image src="/mm.gif" alt="Meteor Mayhem" height={360} width={210} className="" />
           </div>
-        </div>
-        <div className="flex flex-col justify-center pt-2.5">
-          <span className="flex text-gray-500 text-md text-center max-w-4xl">
-            Welcome to “Meteor Mayhem” by Sprout Circle! Prepare yourself for an exhilarating adventure in the depths of space, where your survival instincts will be put to the ultimate test. In this infinite runner game, you take on the role of a courageous space pilot whose ship has become lost in the vastness of the cosmos.
-            As an iOS and Android game, “Meteor Mayhem” is optimized for mobile play, allowing you to enjoy the adrenaline-pumping action anytime, anywhere. Whether you&apos;re waiting in line or simply want to immerse yourself in an exciting gaming experience, Sprout Circle&apos;s “Meteor Mayhem” guarantees to keep you entertained and challenged.
-            So, pilot, prepare yourself for an epic adventure, test your survival skills, and embark on a thrilling journey through the unknown. Will you conquer the depths of space and emerge victorious in “Meteor Mayhem”? The universe awaits your valiant efforts!
+          <Image src="/mmlogo.jpg" alt="Meteor Mayhem" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
+        </ListReveal>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
+          <div className="flex flex-col justify-center pt-2.5">
+            <span className="flex text-gray-500 text-md text-center max-w-4xl">
+              Welcome to “Meteor Mayhem” by Sprout Circle! Prepare yourself for an exhilarating adventure in the depths of space, where your survival instincts will be put to the ultimate test. In this infinite runner game, you take on the role of a courageous space pilot whose ship has become lost in the vastness of the cosmos.
+              As an iOS and Android game, “Meteor Mayhem” is optimized for mobile play, allowing you to enjoy the adrenaline-pumping action anytime, anywhere. Whether you&apos;re waiting in line or simply want to immerse yourself in an exciting gaming experience, Sprout Circle&apos;s “Meteor Mayhem” guarantees to keep you entertained and challenged.
+              So, pilot, prepare yourself for an epic adventure, test your survival skills, and embark on a thrilling journey through the unknown. Will you conquer the depths of space and emerge victorious in “Meteor Mayhem”? The universe awaits your valiant efforts!
+            </span>
+          </div>
+        </Reveal>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
+          <div className="flex flex-col sm:flex-row justify-center">
+            <div className="flex items-center justify-center">
+              <a href="https://apps.apple.com/us/app/meteor-mayhem/id6478241823?itsct=apps_box_badge&amp;itscg=30200" className="p-[12.625px] inline-block" target="_blank" rel="noopener noreferrer">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1709424000" alt="Download on the App Store" className="h-[54.75px]" />
+              </a>
+            </div>
+            <div className="flex items-center justify-center">
+              <a href="https://play.google.com/store/apps/details?id=com.sproutcircle.meteormayhem" className="" target="_blank" rel="noopener noreferrer">
+                <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" className="h-[80px] min-w-[206.72] rounded-xl" />
+              </a>
+            </div>
+          </div>
+        </Reveal>
+      </section>
+      <section className="py-32">
+        <ListReveal className="flex flex-col justify-center items-center space-y-8" origin="bottom" interval={150} delay={0} duration={1000} distance="25px">
+          <span className="font-semibold text-3xl text-center">Are you ready to build something special?</span>
+          <span className="flex text-gray-500 text-md text-center max-w-4xl pb-2.5">
+            Transform your digital dreams into reality with us. We're excited to collaborate and craft something extraordinary for you that not only meets your needs but exceeds your expectations. Let's create something amazing together.
           </span>
-        </div>
-        <div className="flex flex-col sm:flex-row justify-center">
-          <div className="flex items-center justify-center">
-            <a href="https://apps.apple.com/us/app/meteor-mayhem/id6478241823?itsct=apps_box_badge&amp;itscg=30200" className="p-[12.625px] inline-block" target="_blank" rel="noopener noreferrer">
-              <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1709424000" alt="Download on the App Store" className="h-[54.75px]" />
-            </a>
-          </div>
-          <div className="flex items-center justify-center">
-            <a href="https://play.google.com/store/apps/details?id=com.sproutcircle.meteormayhem" className="" target="_blank" rel="noopener noreferrer">
-              <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" className="h-[80px] min-w-[206.72] rounded-xl" />
-            </a>
-          </div>
-        </div>
+          <Link href="/contact" className="load-hidden flex justify-center w-52 bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
+        </ListReveal>
       </section>
     </>
   );

@@ -20,7 +20,7 @@ export default function Reveal({
     duration={duration}
     distance={distance}
     delay={delay}
-    viewFactor={0.2}
+    viewFactor={0.3}
     className="load-hidden">
     {children}
   </RevealWrapper>;
