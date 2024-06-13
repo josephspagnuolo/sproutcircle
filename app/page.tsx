@@ -35,10 +35,10 @@ export default function Home() {
             <CubeScene />
           </div>
           <div id="about" className="pt-32 -mt-32">
-            <ListReveal className="flex flex-col justify-center text-center md:text-left md:px-4 lg:pr-16 space-y-6" origin="bottom" interval={150} delay={300} duration={1000} distance="25px">
+            <ListReveal className="flex flex-col justify-center items-center text-center md:text-left md:px-4 lg:pr-16 space-y-6" origin="bottom" interval={150} delay={300} duration={1000} distance="25px">
               <span className="load-hidden font-bold text-xl text-[#799e29]">What do we do</span>
               <span className="load-hidden text-gray-500 pb-2.5">At Sprout Circle, we are passionate about creating innovative and immersive digital experiences at the intersection of art and technology&mdash;seamlessly blending entertainment with areas like education and manufacturing processes. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.</span>
-              <Link href="/contact" className="load-hidden flex justify-center bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
+              <Link href="/contact" className="load-hidden flex justify-center w-56 md:w-full bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
             </ListReveal>
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function Home() {
           <span className="flex justify-center font-bold text-xl text-center text-[#799e29]">Our Team</span>
         </Reveal>
         <ListReveal className="flex flex-col p-10 lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
-          <a href="https://www.linkedin.com/in/bryan-wong-61490519b/" className="flex justify-center" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/bryan-wong-61490519b/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
             <div className={styles.flip_card}>
               <div className={styles.flip_card_inner}>
                 <div className={styles.flip_card_front}>
@@ -179,7 +179,7 @@ export default function Home() {
               </div>
             </div>
           </a>
-          <a href="https://www.linkedin.com/in/alexander-paglia/" className="flex justify-center" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/alexander-paglia/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
             <div className={styles.flip_card}>
               <div className={styles.flip_card_inner}>
                 <div className={styles.flip_card_front}>
@@ -197,7 +197,7 @@ export default function Home() {
               </div>
             </div>
           </a>
-          <a href="https://www.linkedin.com/in/josephspagnuolo1/" className="flex justify-center" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/josephspagnuolo1/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
             <div className={styles.flip_card}>
               <div className={styles.flip_card_inner}>
                 <div className={styles.flip_card_front}>
@@ -221,11 +221,13 @@ export default function Home() {
         <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
           <span className="flex justify-center font-bold text-xl text-center text-[#799e29]">Our Projects</span>
         </Reveal>
-        <ListReveal className="flex justify-center items-center flex-col space-y-4 md:space-y-0 md:space-x-7 md:flex-row pt-10 max-w-4xl" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
-          <div className="bg-black rounded-3xl py-6">
+        <ListReveal className="flex justify-center items-stretch flex-col space-y-4 md:space-y-0 md:space-x-7 md:flex-row pt-10 max-w-4xl" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
+          <div className="load-hidden flex grow items-center">
+            <Image src="/mmlogo.jpg" alt="Meteor Mayhem" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
+          </div>
+          <div className="load-hidden bg-black rounded-3xl py-6">
             <Image src="/mm.gif" alt="Meteor Mayhem" height={360} width={210} className="" />
           </div>
-          <Image src="/mmlogo.jpg" alt="Meteor Mayhem" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
         </ListReveal>
         <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
           <div className="flex flex-col justify-center pt-2.5">
@@ -253,11 +255,11 @@ export default function Home() {
       </section>
       <section className="py-32">
         <ListReveal className="flex flex-col justify-center items-center space-y-8" origin="bottom" interval={150} delay={0} duration={1000} distance="25px">
-          <span className="font-semibold text-3xl text-center">Are you ready to build something special?</span>
-          <span className="flex text-gray-500 text-md text-center max-w-4xl pb-2.5">
+          <span className="load-hidden font-semibold text-3xl text-center">Are you ready to build something special?</span>
+          <span className="load-hidden flex text-gray-500 text-md text-center max-w-4xl pb-2.5">
             Transform your digital dreams into reality with us. We're excited to collaborate and craft something extraordinary for you that not only meets your needs but exceeds your expectations. Let's create something amazing together.
           </span>
-          <Link href="/contact" className="load-hidden flex justify-center w-52 bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
+          <Link href="/contact" className="load-hidden flex justify-center w-56 bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
         </ListReveal>
       </section>
     </>
