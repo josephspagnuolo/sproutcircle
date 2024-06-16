@@ -35,7 +35,7 @@ export default function Home() {
             <CubeScene />
           </div>
           <div id="about" className="pt-32 -mt-32">
-            <ListReveal className="flex flex-col justify-center items-center text-center md:text-left md:px-4 lg:pr-16 space-y-6" origin="bottom" interval={150} delay={300} duration={1000} distance="25px">
+            <ListReveal className="flex flex-col justify-center items-center text-center md:px-4 lg:pr-16 space-y-6" origin="bottom" interval={150} delay={300} duration={1000} distance="25px">
               <span className="load-hidden font-bold text-xl text-[#799e29]">What do we do</span>
               <span className="load-hidden text-gray-500 pb-2.5">At Sprout Circle, we are passionate about creating innovative and immersive digital experiences at the intersection of art and technology&mdash;seamlessly blending entertainment with areas like education and manufacturing processes. As a forward-thinking development company, we specialize in crafting engaging and dynamic applications, games, and software that captivate users of all ages.</span>
               <Link href="/contact" className="load-hidden flex justify-center w-56 md:w-full bg-[#799e29] px-4 py-4 sm:py-5 rounded-md text-white before:absolute before:h-[100%] before:w-[0%] before:top-0 before:left-0 before:content-[''] hover:before:w-full before:transition-all before:bg-gradient-to-r before:from-[#556b2f] before:to-[#799e29] before:rounded-md"><span className="z-[2] text-2xl">Get in Touch</span></Link>
