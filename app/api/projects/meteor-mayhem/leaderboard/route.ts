@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export async function GET() {
+export async function GET(req: Request) {
 
   const leaderboard = [
     { id: 1, name: "Joseph", score: 2900 },
