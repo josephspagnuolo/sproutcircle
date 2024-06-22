@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 
 export async function GET(req: Request) {
-
   const leaderboard = [
     { id: 1, name: "Joseph", score: 2900 },
     { id: 2, name: "Bryan", score: 2400 },
@@ -37,5 +36,22 @@ export async function GET(req: Request) {
 
   leaderboard.sort((a, b) => b.score - a.score);
 
-  return NextResponse.json(leaderboard);
+  const response = NextResponse.json(leaderboard);
+
+  response.headers.set('Access-Control-Allow-Origin', '*');
+  response.headers.set('Access-Control-Allow-Methods', 'GET,OPTIONS');
+  response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+
+  return response;
+}
+
+export async function OPTIONS() {
+  return new Response(null, {
+    status: 204,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET,OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    },
+  });
 }
