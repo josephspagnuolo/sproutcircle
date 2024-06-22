@@ -1,5 +1,5 @@
-import prisma from '@/lib/prisma'
-import { NextResponse } from "next/server";
+import prisma from '@/lib/prisma';
+import { NextResponse } from 'next/server';
 
 export async function GET(req: Request) {
   const leaderboard = await prisma.leaderboardEntry.findMany();
@@ -9,25 +9,36 @@ export async function GET(req: Request) {
   const response = NextResponse.json(leaderboard);
 
   response.headers.set('Access-Control-Allow-Origin', '*');
-  response.headers.set('Access-Control-Allow-Methods', 'GET,OPTIONS');
+  response.headers.set('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
   response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
 
   return response;
 }
 
 export async function POST(req: Request) {
-  const { name, score } = await req.json();
-
-  const leaderboardEntry = await prisma.leaderboardEntry.create({
-    data: {
-      name,
-      score,
-    },
-  });
   try {
-    return NextResponse.json({ leaderboardEntry });
+    const { name, score } = await req.json();
+
+    const leaderboardEntry = await prisma.leaderboardEntry.create({
+      data: {
+        name,
+        score,
+      },
+    });
+
+    const response = NextResponse.json({ leaderboardEntry });
+    response.headers.set('Access-Control-Allow-Origin', '*');
+    response.headers.set('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+    response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+
+    return response;
   } catch (error) {
-    return NextResponse.json({ error });
+    const response = NextResponse.json({ error });
+    response.headers.set('Access-Control-Allow-Origin', '*');
+    response.headers.set('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
+    response.headers.set('Access-Control-Allow-Headers', 'Content-Type');
+
+    return response;
   }
 }
 
