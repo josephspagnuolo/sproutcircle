@@ -1,4 +1,3 @@
-import { badWords } from "@/bad-words";
 import Reveal from "@/components/reveal";
 import ListReveal from "@/components/reveal-list";
 import Image from "next/image";
@@ -18,6 +17,8 @@ export default async function MeteorMayhemLeaderboard() {
     ...englishDataset.build(),
     ...englishRecommendedTransformers,
   });
+
+  const badWords = process.env.BADWORDS?.split(",") || [""];
 
   const filtered = leaderboard.map((entry) => {
     if (matcher.hasMatch(entry.name)) {
@@ -42,7 +43,7 @@ export default async function MeteorMayhemLeaderboard() {
           </div>
           <div className="load-hidden flex justify-center">
             <span className="text-gray-500 text-xl text-center text-balance">
-              View the all-time global leaderboard for Meteor Mayhem
+              {"View the all-time global leaderboard for Meteor Mayhem"}
             </span>
           </div>
         </ListReveal>
@@ -92,7 +93,7 @@ export default async function MeteorMayhemLeaderboard() {
       <section className="flex justify-center items-center flex-col space-y-6 py-32">
         <Reveal origin="bottom" duration={1000} distance="25px" delay={500}>
           <div className="flex flex-col justify-center pt-2.5">
-            <span className="font-semibold text-3xl text-center">Download for free today!</span>
+            <span className="font-semibold text-3xl text-center">{"Download for free today!"}</span>
           </div>
         </Reveal>
         <Reveal origin="bottom" duration={1000} distance="25px" delay={500}>

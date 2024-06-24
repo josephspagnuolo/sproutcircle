@@ -1,4 +1,3 @@
-import { badWords } from '@/bad-words';
 import prisma from '@/lib/prisma';
 import { NextResponse } from 'next/server';
 import {
@@ -11,6 +10,8 @@ const matcher = new RegExpMatcher({
   ...englishDataset.build(),
   ...englishRecommendedTransformers,
 });
+
+const badWords = process.env.BADWORDS?.split(",") || [""];
 
 export async function GET(req: Request) {
   const leaderboard = await prisma.leaderboardEntry.findMany();
