@@ -16,9 +16,9 @@ const badWords = process.env.BADWORDS?.split(",") || [""];
 export async function GET(req: Request) {
   const leaderboard = await prisma.leaderboardEntry.findMany();
 
-  leaderboard.sort((a, b) => b.score - a.score).slice(0, 5);
+  const top5 = leaderboard.sort((a, b) => b.score - a.score).slice(0, 5);
 
-  const filtered = leaderboard.map((entry) => {
+  const filtered = top5.map((entry) => {
     if (matcher.hasMatch(entry.name)) {
       entry.name = "Anonymous";
       return entry;

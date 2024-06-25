@@ -8,6 +8,8 @@ import {
   englishRecommendedTransformers,
 } from 'obscenity';
 
+export const dynamic = "force-dynamic";
+
 export default async function MeteorMayhemLeaderboard() {
   const leaderboard = await prisma.leaderboardEntry.findMany();
 
