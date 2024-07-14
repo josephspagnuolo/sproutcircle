@@ -9,7 +9,7 @@ export async function POST(req: Request) {
   try {
     const data = await resend.emails.send({
       from: 'Emails <onboarding@resend.dev>',
-      to: 'sproutcirclegames@gmail.com',
+      to: process.env.OUR_EMAIL as string,
       subject: "Contact Form Submission",
       react: ContactEmailTemplate({ name, email, message }) as React.ReactElement,
     });

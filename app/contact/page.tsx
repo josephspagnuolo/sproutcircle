@@ -17,7 +17,7 @@ export default function Contact() {
         </div>
         <ContactForm />
         <div className="flex justify-center w-full pt-6">
-          <a href="mailto:sproutcirclegames@gmail.com">sproutcirclegames@gmail.com</a>
+          <a href="mailto:contact@sproutcircle.ca">contact@sproutcircle.ca</a>
         </div>
       </div>
     </div>

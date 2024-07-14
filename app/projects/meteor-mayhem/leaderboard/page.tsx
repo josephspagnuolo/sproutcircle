@@ -55,7 +55,7 @@ export default async function MeteorMayhemLeaderboard() {
           </span>
         ) : (
           <ul className="flex justify-center w-full mt-32 mb-6">
-            <ListReveal className="flex flex-col w-full" origin="bottom" interval={150} delay={600} duration={1000} distance="25px">
+            <ListReveal className="flex flex-col w-full" origin="bottom" interval={50} delay={0} duration={1000} distance="25px">
               {filtered.map((entry, index) => (
                 <li key={entry.id} className={`load-hidden flex justify-between items-center flex-row py-2 space-x-4 ${index === 0 ? "border-y border-slate-900" : "border-b border-slate-900"}`}>
                   <div className="flex justify-center items-center flex-row space-x-3 shrink-0">

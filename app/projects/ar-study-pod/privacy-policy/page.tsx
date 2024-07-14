@@ -36,7 +36,7 @@ export default function ARStudyPodPrivacyPolicy() {
           If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us using the following information:
         </div>
         <div>Sprout Circle, makers of "AR Study Pod"</div>
-        <a href="mailto:sproutcirclegames@gmail.com">sproutcirclegames@gmail.com</a>
+        <a href="mailto:contact@sproutcircle.ca">contact@sproutcircle.ca</a>
       </div>
     </div>
   );
