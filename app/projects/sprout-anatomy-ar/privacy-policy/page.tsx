@@ -1,18 +1,18 @@
-export default function ARStudyPodPrivacyPolicy() {
+export default function SproutAnatomyARPrivacyPolicy() {
   return (
-    <div className="px-16">
+    <div className="sm:px-16">
       <h1 className="font-bold text-3xl">Privacy and Data Collection Policy</h1>
       <div className="py-10">
-        <div className="py-2">Privacy Policy - AR Study Pod</div>
+        <div className="py-2">Privacy Policy - Sprout Anatomy AR</div>
         <div className="py-2">Effective Date: December 10th, 2023</div>
         <div className="py-2">
-          This Privacy Policy outlines how AR Study Pod ("we," "us," or "our") handle your personal information when you use our mobile application. We are committed to protecting your privacy and complying with applicable data protection laws. Please take the time to read this policy carefully.
+          This Privacy Policy outlines how Sprout Anatomy AR ("we," "us," or "our") handle your personal information when you use our mobile application. We are committed to protecting your privacy and complying with applicable data protection laws. Please take the time to read this policy carefully.
         </div>
         <div className="py-2 ml-8">Information We Do Not Collect</div>
         <div className="py-2">
-          We want to make it clear that we do not collect any data from users of AR Study Pod. We believe in upholding the highest standards of privacy and transparency. As such, you can rest assured that your privacy is fully respected when you use our app. This means that we do not gather, store, or process any personal information, including but not limited to:
+          We want to make it clear that we do not collect any data from users of Sprout Anatomy AR. We believe in upholding the highest standards of privacy and transparency. As such, you can rest assured that your privacy is fully respected when you use our app. This means that we do not gather, store, or process any personal information, including but not limited to:
         </div>
-        <div className="py-2">
+        <div className="py-2 ml-8">
           <ul className="list-disc">
             <li>Names</li>
             <li>Email addresses</li>
@@ -25,7 +25,7 @@ export default function ARStudyPodPrivacyPolicy() {
         </div>
         <div className="py-2 ml-8">Information Automatically Collected</div>
         <div className="py-2">
-          Since we do not collect any data, there is no information automatically gathered by AR Study Pod. Our App does not use cookies, tracking technologies, or any other mechanisms to obtain or store data about our users.
+          Since we do not collect any data, there is no information automatically gathered by Sprout Anatomy AR. Our App does not use cookies, tracking technologies, or any other mechanisms to obtain or store data about our users.
         </div>
         <div className="py-2 ml-8">Changes to This Privacy Policy</div>
         <div className="py-2">
@@ -35,8 +35,8 @@ export default function ARStudyPodPrivacyPolicy() {
         <div className="py-2">
           If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please contact us using the following information:
         </div>
-        <div>Sprout Circle, makers of "AR Study Pod"</div>
-        <a href="mailto:contact@sproutcircle.ca">contact@sproutcircle.ca</a>
+        <div>Sprout Circle, makers of "Sprout Anatomy AR"</div>
+        <a href="mailto:contact@sproutcircle.ca" className="underline">contact@sproutcircle.ca</a>
       </div>
     </div>
   );
