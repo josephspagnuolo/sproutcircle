@@ -188,11 +188,11 @@ export default function Home() {
                       Co-Founder
                     </span>
                     <span className="font-semibold text-2xl text-center">
-                      Alex Paglia
+                      Alexander Paglia
                     </span>
                   </div>                </div>
                 <div className={styles.flip_card_back}>
-                  <span className="text-sm">Alex Paglia is a passionate and ambitious individual who is currently studying at York University&apos;s Lassonde School of Engineering. With a strong focus on computer engineering, Alex has developed a deep understanding of programming and is constantly seeking new challenges and opportunities to expand his knowledge of AR and VR.</span>
+                  <span className="text-sm">Alexander Paglia is a passionate and ambitious individual who is currently studying at York University&apos;s Lassonde School of Engineering. With a strong focus on computer engineering, Alex has developed a deep understanding of programming and is constantly seeking new challenges and opportunities to expand his knowledge of AR and VR.</span>
                 </div>
               </div>
             </div>
