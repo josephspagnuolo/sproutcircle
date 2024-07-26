@@ -6,17 +6,17 @@ export const dynamic = "force-dynamic";
 
 export default async function SproutAnatomyAR() {
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className="flex justify-center items-center flex-col h-full">
       <section className="flex justify-center items-center flex-col space-y-6 py-12">
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={500}>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={150}>
           <div className="flex flex-col justify-center pt-2.5">
             <span className="font-semibold text-3xl text-center">{"Download for free today!"}</span>
           </div>
         </Reveal>
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={500}>
-          <Image src="/saa.png" alt="Sprout Anatomy AR" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle mt-3" />
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
+          <Image src="/sar.png" alt="Sprout Anatomy AR" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle mt-3" />
         </Reveal>
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={500}>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={450}>
           <div className="flex flex-col sm:flex-row justify-center">
             <div className="flex items-center justify-center">
               <a href="https://apps.apple.com/us/app/sprout-anatomy-ar/id6478272230?itsct=apps_box_badge&amp;itscg=30200" className="p-[12.625px] inline-block" target="_blank" rel="noopener noreferrer">

@@ -217,24 +217,65 @@ export default function Home() {
           </a>
         </ListReveal>
       </section>
-      <section id="projects" className="flex justify-center items-center flex-col space-y-6 py-32">
+      <section id="projects" className="flex justify-center items-center flex-col space-y-5 py-32">
         <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
           <span className="flex justify-center font-bold text-xl text-center text-[#799e29]">Our Projects</span>
         </Reveal>
         <ListReveal className="flex justify-center items-stretch flex-col space-y-4 md:space-y-0 md:space-x-7 md:flex-row pt-10 max-w-4xl" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
-          <div className="load-hidden flex grow items-center">
-            <Image src="/mmlogo.jpg" alt="Meteor Mayhem" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
+          <div className="load-hidden flex grow justify-center items-center">
+            <Image src="/sar.png" alt="Sprout Anatomy AR" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
           </div>
-          <div className="load-hidden bg-black rounded-3xl py-6">
-            <Image src="/mm.gif" alt="Meteor Mayhem" height={360} width={210} className="" />
+          <div className="load-hidden max-w-[500px] overflow-hidden">
+            <Image src="/sar.gif" alt="Sprout Anatomy AR" height={450} width={658} className="" />
           </div>
         </ListReveal>
         <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
           <div className="flex flex-col justify-center pt-2.5">
             <span className="flex text-gray-500 text-md text-center max-w-4xl">
-              Welcome to “Meteor Mayhem” by Sprout Circle! Prepare yourself for an exhilarating adventure in the depths of space, where your survival instincts will be put to the ultimate test. In this infinite runner game, you take on the role of a courageous space pilot whose ship has become lost in the vastness of the cosmos.
-              As an iOS and Android game, “Meteor Mayhem” is optimized for mobile play, allowing you to enjoy the adrenaline-pumping action anytime, anywhere. Whether you&apos;re waiting in line or simply want to immerse yourself in an exciting gaming experience, Sprout Circle&apos;s “Meteor Mayhem” guarantees to keep you entertained and challenged.
-              So, pilot, prepare yourself for an epic adventure, test your survival skills, and embark on a thrilling journey through the unknown. Will you conquer the depths of space and emerge victorious in “Meteor Mayhem”? The universe awaits your valiant efforts!
+              Welcome to Sprout Anatomy AR! It&apos;s time for more interactive, engaging and effective learning with the power of augmented reality (AR). Say goodbye to traditional textbooks and lectures, and welcome a new era of education.
+              With our app, you have access to a diverse range of 3D models, including intricate cell biology structures, the fascinating complexities of the heart, the enigmatic workings of the brain, and the detailed processes of the digestive system. Explore and interact with these models in the palm of your hand.
+              Our latest release brings even more power to your fingertips with tracking worksheet capabilities, highlighting specific elements within a model, and enhanced descriptions, providing invaluable insights and enriching your learning journey. Download now and embark on a journey of discovery with Sprout Anatomy AR - where learning comes to life in stunning augmented reality.
+            </span>
+          </div>
+        </Reveal>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
+          <div className="flex flex-col sm:flex-row justify-center">
+            <div className="flex items-center justify-center">
+              <a href="https://apps.apple.com/us/app/sprout-anatomy-ar/id6478272230?itsct=apps_box_badge&amp;itscg=30200" className="p-[12.625px] inline-block" target="_blank" rel="noopener noreferrer">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1709424000" alt="Download on the App Store" className="h-[54.75px]" />
+              </a>
+            </div>
+            <div className="flex items-center justify-center">
+              <a href="https://play.google.com/store/apps/details?id=com.sproutcircle.arstudypod" className="" target="_blank" rel="noopener noreferrer">
+                <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" className="h-[80px] min-w-[206.72] rounded-xl" />
+              </a>
+            </div>
+          </div>
+        </Reveal>
+        <ListReveal className="flex justify-center items-stretch flex-col space-y-4 md:space-y-0 md:space-x-7 md:flex-row pt-16 max-w-4xl" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
+          <div className="load-hidden flex grow items-center">
+            <Image src="/mmlogo.jpg" alt="Meteor Mayhem" width={220} height={220} className="w-[220px] h-[220px] rounded-[22%] overflow-hidden inline-block align-middle" />
+          </div>
+          <div className="load-hidden">
+            <div className="bg-gray-500 p-1.5 rounded-[21px]">
+              <div className="bg-black rounded-2xl py-6">
+                <Image src="/mm.gif" alt="Meteor Mayhem" height={360} width={210} className="" />
+              </div>
+            </div>
+            <div className="bg-gray-500 w-0.5 h-5 -translate-x-0.5 -translate-y-[368px] absolute rounded-l-sm"></div>
+            <div className="bg-gray-500 w-0.5 h-[34px] -translate-x-0.5 -translate-y-[330px] absolute rounded-l-sm"></div>
+            <div className="bg-gray-500 w-0.5 h-[34px] -translate-x-0.5 -translate-y-72 absolute rounded-l-sm"></div>
+            <div className="bg-gray-800 w-6 h-1 translate-x-[100px] -translate-y-[406px] absolute rounded-md"></div>
+            <div className="bg-gradient-radial from-blue-700 to-black w-1 h-1 translate-x-[135px] -translate-y-[406px] absolute rounded-full"></div>
+            <div className="bg-gray-500 w-0.5 h-12 translate-x-[222px] -translate-y-[312px] absolute rounded-r-sm"></div>
+          </div>
+        </ListReveal>
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
+          <div className="flex flex-col justify-center pt-2.5">
+            <span className="flex text-gray-500 text-md text-center max-w-4xl">
+              Welcome to Meteor Mayhem! Prepare yourself for an exhilarating adventure in the depths of space, where your survival instincts will be put to the ultimate test. In this infinite runner game, you take on the role of a courageous space pilot whose ship has become lost in the vastness of the cosmos.
+              As an iOS and Android game, Meteor Mayhem is optimized for mobile play, allowing you to enjoy the adrenaline-pumping action anytime, anywhere. Whether you&apos;re waiting in line or simply want to immerse yourself in an exciting gaming experience, Sprout Circle&apos;s Meteor Mayhem guarantees to keep you entertained and challenged.
+              So, pilot, prepare yourself for an epic adventure, test your survival skills, and embark on a thrilling journey through the unknown. Will you conquer the depths of space and emerge victorious in Meteor Mayhem? The universe awaits your valiant efforts!
             </span>
           </div>
         </Reveal>
