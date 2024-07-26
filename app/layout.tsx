@@ -10,8 +10,8 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Sprout Circle",
   description: "Leaders in Innovation",
-  keywords: ["Sprout Circle", "sprout circle", "website", "coding", "software development", "immersive", "augmented reality", "AR"],
-  metadataBase: new URL("https://sproutcircle.ca/"),
+  keywords: ["Sprout Circle", "sprout circle", "website", "web design", "coding", "software development", "app", "mobile apps", "immersive", "augmented reality", "AR"],
+  metadataBase: new URL("https://sproutcircle.ca"),
   creator: "Sprout Circle",
   publisher: "Sprout Circle",
   authors: [{ name: "Joseph Spagnuolo" }],
