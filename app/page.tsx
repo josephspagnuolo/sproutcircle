@@ -80,9 +80,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="services">
+      <section id="services" className="py-32">
         <Reveal origin="bottom" duration={1000} distance="25px" delay={300} >
-          <div className="flex justify-center pt-32 flex-col space-y-4">
+          <div className="flex justify-center flex-col space-y-4">
             <span className="font-bold text-xl text-center text-[#799e29]">
               Services
             </span>
@@ -139,7 +139,7 @@ export default function Home() {
           </div>
         </Reveal>
         <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
-          <div className="flex justify-center pt-16 pb-32 flex-col space-y-4">
+          <div className="flex justify-center pt-16 flex-col space-y-4">
             <span className="font-bold text-xl text-center text-[#799e29]">
               App & Web Development
             </span>
@@ -153,69 +153,6 @@ export default function Home() {
             </div>
           </div>
         </Reveal>
-      </section>
-      <section id="team" className="flex justify-center flex-col space-y-6 py-32">
-        <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
-          <span className="flex justify-center font-bold text-xl text-center text-[#799e29]">Our Team</span>
-        </Reveal>
-        <ListReveal className="flex flex-col p-10 lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
-          <a href="https://www.linkedin.com/in/bryan-wong-61490519b/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
-            <div className={styles.flip_card}>
-              <div className={styles.flip_card_inner}>
-                <div className={styles.flip_card_front}>
-                  <div className="flex flex-col h-full place-content-center">
-                    <span className="text-lg text-center">
-                      Co-Founder
-                    </span>
-                    <span className="font-semibold text-2xl text-center">
-                      Bryan Wong
-                    </span>
-                  </div>
-                </div>
-                <div className={styles.flip_card_back}>
-                  <span className="text-sm">Bryan Wong is a driven and multi-talented individual who has recently graduated from York University with a degree in Political Science. With a passion for learning and a keen interest in law
-                    Bryan is eager to bring his unique perspective to the gaming industry, and to create new and innovative gaming experiences that will captivate players all around the world.</span>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/alexander-paglia/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
-            <div className={styles.flip_card}>
-              <div className={styles.flip_card_inner}>
-                <div className={styles.flip_card_front}>
-                  <div className="flex flex-col h-full place-content-center">
-                    <span className="text-lg text-center">
-                      Co-Founder
-                    </span>
-                    <span className="font-semibold text-2xl text-center">
-                      Alexander Paglia
-                    </span>
-                  </div>                </div>
-                <div className={styles.flip_card_back}>
-                  <span className="text-sm">Alexander Paglia is a passionate and ambitious individual who is currently studying at York University&apos;s Lassonde School of Engineering. With a strong focus on computer engineering, Alex has developed a deep understanding of programming and is constantly seeking new challenges and opportunities to expand his knowledge of AR and VR.</span>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="https://www.linkedin.com/in/josephspagnuolo1/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
-            <div className={styles.flip_card}>
-              <div className={styles.flip_card_inner}>
-                <div className={styles.flip_card_front}>
-                  <div className="flex flex-col h-full place-content-center">
-                    <span className="text-lg text-center">
-                      Co-Founder
-                    </span>
-                    <span className="font-semibold text-2xl text-center">
-                      Joseph Spagnuolo
-                    </span>
-                  </div>                </div>
-                <div className={styles.flip_card_back}>
-                  <span className="text-sm">Joseph Spagnuolo is a dedicated and analytical individual who is currently pursuing his studies in software engineering at York University&apos;s Lassonde School of Engineering. With his technical expertise and creative spirit, Joseph is eager to bring his unique perspective to the world of software development to create engaging and immersive experiences.</span>
-                </div>
-              </div>
-            </div>
-          </a>
-        </ListReveal>
       </section>
       <section id="projects" className="flex justify-center items-center flex-col space-y-5 py-32">
         <Reveal origin="bottom" duration={1000} distance="25px" delay={300}>
@@ -293,6 +230,71 @@ export default function Home() {
             </div>
           </div>
         </Reveal>
+      </section>
+      <section id="team" className="flex justify-center flex-col space-y-6 py-32">
+        <Reveal origin="bottom" duration={1000} distance="25px" delay={300} >
+          <div className="flex justify-center flex-col space-y-4">
+            <span className="font-bold text-xl text-center text-[#799e29]">
+              Our Team
+            </span>
+            <div className="flex justify-center">
+              <span className="flex text-gray-500 text-center pt-6 max-w-4xl">
+                As the creators of Sprout Anatomy AR and Meteor Mayhem, we are on a mission to bring interactive, educational, and entertaining content to life.
+                With our diverse expertise, we strive to push boundaries and redefine how users engage with technology. Together, we&apos;re building a future where learning and adventure are at your fingertips.
+                Join us as we continue to shape and innovate in the digital landscape. You can learn more about our developers below.
+              </span>
+            </div>
+          </div>
+        </Reveal>
+        <ListReveal className="flex flex-col p-10 lg:flex-row justify-center space-y-8 lg:space-y-0 lg:space-x-8" origin="bottom" interval={250} delay={300} duration={1000} distance="25px">
+          <a href="https://www.linkedin.com/in/bryan-wong-61490519b/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
+            <div className={styles.flip_card}>
+              <div className={styles.flip_card_inner}>
+                <div className={styles.flip_card_front}>
+                  <div className="flex flex-col h-full place-content-center">
+                    <span className="font-semibold text-2xl text-center">
+                      Bryan Wong
+                    </span>
+                  </div>
+                </div>
+                <div className={styles.flip_card_back}>
+                  <span className="text-sm">Bryan Wong is a driven and multi-talented individual who has recently graduated from York University with a degree in Political Science. With a passion for learning and a keen interest in law
+                    Bryan is eager to bring his unique perspective to the gaming industry, and to create new and innovative gaming experiences that will captivate players all around the world.</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/alexander-paglia/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
+            <div className={styles.flip_card}>
+              <div className={styles.flip_card_inner}>
+                <div className={styles.flip_card_front}>
+                  <div className="flex flex-col h-full place-content-center">
+                    <span className="font-semibold text-2xl text-center">
+                      Alexander Paglia
+                    </span>
+                  </div>                </div>
+                <div className={styles.flip_card_back}>
+                  <span className="text-sm">Alexander Paglia is a passionate and ambitious individual who is currently studying at York University&apos;s Lassonde School of Engineering. With a strong focus on computer engineering, Alex has developed a deep understanding of programming and is constantly seeking new challenges and opportunities to expand his knowledge of AR and VR.</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/josephspagnuolo1/" className="load-hidden flex justify-center" target="_blank" rel="noopener noreferrer">
+            <div className={styles.flip_card}>
+              <div className={styles.flip_card_inner}>
+                <div className={styles.flip_card_front}>
+                  <div className="flex flex-col h-full place-content-center">
+                    <span className="font-semibold text-2xl text-center">
+                      Joseph Spagnuolo
+                    </span>
+                  </div>                </div>
+                <div className={styles.flip_card_back}>
+                  <span className="text-sm">Joseph Spagnuolo is a dedicated and analytical individual who is currently pursuing his studies in software engineering at York University&apos;s Lassonde School of Engineering. With his technical expertise and creative spirit, Joseph is eager to bring his unique perspective to the world of software development to create engaging and immersive experiences.</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </ListReveal>
       </section>
       <section className="py-32">
         <ListReveal className="flex flex-col justify-center items-center space-y-8" origin="bottom" interval={150} delay={0} duration={1000} distance="25px">
