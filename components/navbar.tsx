@@ -37,8 +37,8 @@ export default function NavBar() {
         <div className="px-5 pb-5 space-y-1">
           <a href="/#about" onClick={() => setIsOpen(false)} className="text-center block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">About</a>
           <a href="/#services" onClick={() => setIsOpen(false)} className="text-center block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Services</a>
-          <a href="/#team" onClick={() => setIsOpen(false)} className="text-center block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Team</a>
           <a href="/#projects" onClick={() => setIsOpen(false)} className="text-center block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Projects</a>
+          <a href="/#team" onClick={() => setIsOpen(false)} className="text-center block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Team</a>
           <Link href="/contact" onClick={() => setIsOpen(false)} className="text-center block px-3 py-2 rounded-md text-base font-medium text-white bg-[#799e29] hover:bg-[#556b2f]">Contact</Link>
         </div>
       </div>
